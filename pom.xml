@@ -46,4 +46,10 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>eureka</module>
+        <module>user</module>
+        <module>gateway</module>
+    </modules>
+
 </project>
