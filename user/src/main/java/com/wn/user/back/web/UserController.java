@@ -35,9 +35,6 @@ public class UserController extends ServerResopnse {
         //将加密后的密码存到实体类中
         user.setPassword(newPassword);
         User login = userService.login(user);
-
-        System.out.println(login+"~~~~~~~~~~~~~`");
-
         //判断login的值，如果是null表示数据库没查到，就是没有注册或是账号密码错误
         if (login == null){
             //给前端响应未登录的状态码

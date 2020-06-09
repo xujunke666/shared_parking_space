@@ -16,9 +16,6 @@ import org.joda.time.DateTime;
 public class JWTUtil {
     //生成token
      public static String generateToken(User user,Integer time,String rsaPath){
-
-         System.out.println(user+".......................");
-
          String token = "";
          try {
              token = Jwts.builder().claim("id", user.getId()).claim("account", user.getAccount()).claim("role", user.getRoleId())
