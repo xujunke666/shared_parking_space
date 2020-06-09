@@ -4,7 +4,7 @@
 
   <!--后台用户登录-->
   <select id="login" resultType="com.wn.common.pojo.User">
-    select id,account,password from user where account=#{account} and password=#{password};
+    select id,account,password,role_id from user where account=#{account} and password=#{password}
   </select>
   
 </mapper>
